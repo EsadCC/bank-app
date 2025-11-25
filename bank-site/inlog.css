@@ -1,0 +1,127 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family:'Courier New', Courier, monospace;
+}
+
+.navbar1
+{
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.logo
+{
+    margin-right: 80px;
+}
+.zoeken
+{
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px  rgb(143, 140, 140);
+    background-color: rgba(206, 201, 201, 0.247);
+    padding: 10px;
+    margin-right: auto;
+}
+
+.user
+{
+    background-color: #77AFFF;
+    border-radius: 30px;
+    padding: 5px;
+    margin-right: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.user:hover
+{
+    transform: scale(1.1);
+}
+
+.section1
+{
+    float: left;
+    margin: 70px;
+    
+}
+
+.section2
+{
+    display: flex;
+    justify-content: center;
+}
+
+.welkom
+{
+    font-size: 50px;
+    text-shadow: 5px 5px 5px #77AFFF;
+}
+
+.p1
+{
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+.account-maken
+{
+    background-color: #77AFFF;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid white;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+    margin-left: 80px;
+}
+
+.account-maken:hover
+{
+    transform: scale(1.1);
+}
+
+.user-salary
+{
+    float: right;
+    margin-right: 100px;
+    width: 350px;
+}
+
+
+.account-item
+{
+    background-color: #77b0ff59;
+    padding: 50px;
+    text-align: center;
+    border-radius: 20px;
+    flex: 1 1 0;
+    min-width: 0;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 2px 2px 5px #77AFFF;
+}
+
+.account-item:hover
+{
+    transform: scale(1.1);
+}
+
+.footer
+{
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row; 
+    margin: 80px;
+    gap: 80px;
+}
