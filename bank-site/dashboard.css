@@ -1,0 +1,199 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    min-height: 100vh;
+    background-color: #f0f0f0; 
+}
+
+
+.layout-navbar {
+    display: flex;
+    min-height: calc(100vh - 80px); 
+}
+
+
+.nav-head
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dbe3ed;
+    height: 0;
+    padding: 40px;
+}
+
+.logo
+{
+
+    transition: transform 0.5s ease;
+}
+
+.logo:hover
+{
+    transform: scale(1.1);
+}
+
+.userpng
+{
+    background-color: #77AFFF;
+    color: white;
+    border-radius: 50%;
+    padding: 12px;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s ease;
+}
+
+.userpng:hover
+{
+    transform: scale(1.1);
+}
+
+/* Zijkolom Navigatie */
+.navbar
+{
+    flex-shrink: 0; 
+    width: 300px; 
+    padding-top: 20px;
+}
+
+.navbar ul {
+    padding-top: 40px; 
+}
+.navbar ul li
+{
+    list-style: none;
+    font-size: 22px;
+    padding: 42px;
+    cursor: pointer;
+    color: #333;
+}
+
+.navbar a
+{
+    text-decoration: none;
+    color: inherit;
+    transition: font-weight 0.3s ease;
+}
+
+.navbar li:hover a, .navbar li.actief a
+{
+    font-weight: bold;
+    color: #4b8df0;
+}
+
+/* Main content */
+.main-content {
+    flex-grow: 1;
+    padding: 60px; 
+}
+
+.goedemiddag
+{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #333;
+    font-size: 40px;
+}
+
+/* Saldo, rekeningen en creditcard */
+
+.saldo-overzicht
+{
+    display: flex; 
+    gap: 40px;
+    margin-bottom: 100px;
+}
+
+.saldo-item
+{
+    background-color: #a4b7ff; 
+    padding: 30px;
+    border-radius: 16px;
+    flex: 1;
+    color: white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+    transition: transform 0.3s ease-in-out;
+}
+
+.saldo-item:hover
+{
+    transform: scale(1.1);
+}
+
+.saldo-item span 
+{
+    font-size: 18px;
+    opacity: 0.8;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.saldo-item p 
+{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.creditcard-saldo {
+    background-color: #6a5acd; 
+}
+
+/* Transacties */
+
+.latest-transacties h2 
+{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.transactie-list 
+{
+    background-color: white;
+    padding: 30px;
+    border-radius: 16px;
+}
+
+.transactie-row 
+{
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee; 
+}
+
+.datum, .bedrag 
+{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.datum 
+{
+    width: 80px;
+}
+
+.bedrag 
+{
+    width: 100px; 
+}
+
+.kaart1
+{
+    width: 1100px;
+}
+.progress-bar
+{
+    height: 12px; 
+    margin: 0 30px;
+}
