@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinNova - Home</title>
+    <script src="https://kit.fontawesome.com/e3edab2e0c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Home.css">
+    <script src="Home.js" defer></script>
+</head>
+<body>
+    <nav class="navbar1" id="navbar1">
+        <img src="img/FinNovalogo-removebg-preview.png" class="logo" id="logo" width="100">
+        <button class="inloggen-knop" id="inlogknop">Inloggen</button>
+    </nav>
+
+    <main>
+        <section class="section1" id="section1">
+            <h1 class="welkom" id="welkom">Welkom bij FinNova</h1>
+            <p class="p1" id="p1">Snel en eenvoudig je geld beheren.</p>
+            <button class="account-maken" id="accountmaken">Maak een account</button>
+        </section>
+        <section class="section2" id="section2">
+            <img src="img/user-salary.png" class="user-salary" id="user-salary">
+        </section>
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="account-item betaalrekeningen">
+            <img src="img/bank.png" width="100">
+            <br>
+            Betaalrekeningen
+        </div>
+        <div class="account-item spaarrekeningen">
+            <img src="img\piggy-bank-budget.png" width="100">
+            <br>
+            Spaarrekeningen
+        </div>
+        <div class="account-item creditcard">
+            <img src="img/credit-card.png" width="100">
+            <br>
+            Credit card
+        </div>
+    </footer>
+
+    <div class="box" id="box">
+        <div class="box-content">
+            <span class="close-button" id="closeLogin">&times;</span> 
+
+            <img src="img/FinNovalogo-removebg-preview.png" width="100">
+            <h1>Welkom terug</h1>
+            <form>
+                <input type="text" placeholder="Gebruikersnaam" required id="gebruikersnaam"/>
+                <input type="password" placeholder="Wachtwoord" required id="wachtwoord"/>
+                <p id="notification"></p>
+                <a href="#">Wachtwoord vergeten?</a>
+                <button type="submit" class="knop inloggen-knop" id="submit1">Inloggen</button>
+            </form>
+            <p id="notification"></p>
+            <p>Nog geen account? <a href="#" id="linkToSignup">Account aanmaken</a></p>
+        </div>
+    </div>
+
+    <div class="box" id="box2">
+        <div class="box-content">
+            <span class="close-button" id="closeSignup">&times;</span>
+            <img src="img/FinNovalogo-removebg-preview.png" width="100">
+            <h1>Maak je account aan</h1>
+            <form>
+                <input type="text" placeholder="Voornaam" required  id="voornaam"/>
+                <input type="text" placeholder="Achternaam" required  id="achternaam"/>
+                <input type="email" placeholder="E-mailadres" required id="email"/>
+                <input type="password" placeholder="Wachtwoord" required id="wachtwoord"/>
+                <button type="submit" class="knop aanmelden-knop" id="submit2">Account aanmaken</button>
+            </form>
+            <p id="notification"></p>
+
+            <p>Heb je al een account? <a href="#" id="linkToLogin">Inloggen</a></p>
+        </div>
+    </div>
+</body>
+</html>
