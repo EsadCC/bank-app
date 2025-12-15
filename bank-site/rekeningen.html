@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinNova - Rekeningen</title>
+    <link rel="stylesheet" href="rekeningen.css">
+    <script src="rekeningen.js" defer></script>
+    <script src="https://kit.fontawesome.com/e3edab2e0c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="nav-head" id="nav-head">
+            <img src="img/FinNovalogo-removebg-preview.png" width="100" class="logo" id="logo"> 
+            <div class="userpng"><i class="fas fa-user"></i></div> 
+        </nav>
+    </header>
+
+    <div class="layout-navbar">
+        <nav class="navbar" id="navbar">
+            <ul>
+                <li class="dashboard"><a href="dashboard.html">Dashboard</a></li>
+                <li class="rekeningen actief"><a href="rekeningen.html">Rekeningen</a></li>
+                <li class="overschrijven"><a>Overschrijven</a></li>
+                <li class="kaarten"><a>Kaarten</a></li>
+                <li class="spaardoelen"><a>Spaardoelen</a></li>
+                <li class="instellingen"><a>Instellingen</a></li>
+                <li class="help"><a>Help</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+        <h1 class="overzicht" id="overzicht">Overzicht van Rekeningen</h1>
+        <div class="nieuwe-rekening-form">
+            <input type="text" id="voornaam" placeholder="Voornaam">
+            <input type="text" id="achternaam" placeholder="Achternaam">
+        </div>
+        <button class="btn-nieuwe-rekening" id="btn-nieuwe-rekening"> Nieuwe rekening aanmaken</button>
+    <section class="saldo-overzicht" id="saldo-overzicht">
+
+        <div class="saldo-item">
+            <span>Saldo:</span>
+            <p>€3000,00</p>
+            <div class="rekening-info">
+                <small>IBAN: NL12BANK1234567890</small>
+                <small>Pasnummer: 123A456</small>
+                <small>Geldig t/m: 08-2028</small>
+            </div>
+        </div>
+
+        <div class="saldo-item">
+            <span>Spaarrekening:</span>
+            <p>€10000,00</p>
+            <div class="rekening-info">
+                <small>IBAN: NL34BANK0987654321</small>
+                <small>Pasnummer: 456B789</small>
+                <small>Geldig t/m: 11-2029</small>
+            </div>
+        </div>
+
+        <div class="saldo-item">
+            <span>Creditcard:</span>
+            <p>€1000,00</p>
+            <div class="rekening-info">
+                <small>IBAN: NL56BANK1122334455</small>
+                <small>Pasnummer: 789C012</small>
+                <small>Geldig t/m: 03-2027</small>
+            </div>
+        </div>
+
+    </section>
+</main>
+    </div>
+</body>
+</html>
