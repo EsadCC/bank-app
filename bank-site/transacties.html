@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinNova - Dashboard</title>
+    <link rel="stylesheet" href="transacties.css">
+    <script src="https://kit.fontawesome.com/e3edab2e0c.js" crossorigin="anonymous"></script>
+    <script src="transacties.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="nav-head" id="nav-head">
+            <img src="img/FinNovalogo-removebg-preview.png" width="100" class="logo" id="logo">
+            <div id="dropDown" class="dropDown">
+            <div class="userpng" id="userToggle"><i class="fas fa-user"></i></div>
+            <ul class="dropMenu">
+              <li id="settingsDrop">Instellingen</li>
+              <li id="helpDrop">Help</li>
+              <li id="logUitDrop">Uitloggen</li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="layout-navbar">
+        <nav class="navbar" id="navbar">
+            <ul>
+                <li class="dashboard"><a href="dashboard.html">Dashboard</a></li>
+                <li class="rekeningen"><a href="rekeningen.html">Rekeningen</a></li>
+                <li class="overschrijven"><a href="overschrijven.html">Overschrijven</a></li>
+                <li class="transacties actief"><a href="transacties.html">Transacties</a></li>
+                <li class="spaardoelen"><a>Spaardoelen</a></li>
+                <li class="instellingen"><a>Instellingen</a></li>
+                <li class="help"><a>Help</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+              <div class="layout-navbar">
+
+
+    <main class="main-content">
+      <section class="tx-card">
+        <h1 class="tx-title">Transactiegeschiedenis</h1>
+
+        <div class="filters">
+          <div class="field">
+            <label for="typeFilter">Filter op type:</label>
+            <select id="typeFilter">
+              <option value="alle">Alle</option>
+              <option value="inkomend">Inkomend</option>
+              <option value="uitgaand">Uitgaand</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="dateFilter">Filter op datum:</label>
+            <input id="dateFilter" type="date" />
+          </div>
+
+          <div class="field">
+            <label for="sortFilter">Sorteren op datum:</label>
+            <select id="sortFilter">
+              <option value="nieuw-oud">Nieuw -> Oud</option>
+              <option value="oud-nieuw">Oud -> Nieuw</option>
+            </select>
+          </div>
+
+          <button class="btn-primary" id="applyBtn">Filteren</button>
+          <button class="btn-ghost" id="resetBtn" type="button">Reset</button>
+        </div>
+
+        <div class="tx-list" id="txList"></div>
+      </section>
+    </main>
+  </div>
+        </main>
+    </div>
+</body>
+</html>
+
+
+<!--
+reflectie opdracht
+1. Wat snap ik nu beter dan voor deze opdracht?
+Hoe je moet omgaan met JavaScript.
+
+2. Waarvoor heb ik AI gebruikt? (uitleg/controle/code genereren/debuggen)
+Ik heb AI gebruikt om mij te helpen met het maken van het JavaScript stuk.
+
+3. Zou ik deze opdracht zonder AI kunnen maken? (ja/deels/nee)
+Ik zou deze opdracht deels zonder AI kunnen maken, want ik ben nog niet zo goed in JavaScript.-->

@@ -1,0 +1,285 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    min-height: 100vh;
+    background-color: #f0f0f0; 
+}
+
+
+.layout-navbar {
+    display: flex;
+    min-height: calc(100vh - 80px); 
+}
+
+
+.nav-head
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dbe3ed;
+    height: 0;
+    padding: 40px;
+}
+
+.logo
+{
+
+    transition: transform 0.5s ease;
+}
+
+.logo:hover
+{
+    transform: scale(1.1);
+}
+
+.userpng
+{
+    background-color: #77AFFF;
+    color: white;
+    border-radius: 50%;
+    padding: 12px;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s ease;
+}
+
+.userpng:hover
+{
+    transform: scale(1.1);
+}
+
+/* Zij Navigatie */
+.navbar
+{
+    flex-shrink: 0; 
+    width: 300px; 
+    padding-top: 20px;
+}
+
+.navbar ul {
+    padding-top: 40px; 
+}
+.navbar ul li
+{
+    list-style: none;
+    font-size: 22px;
+    padding: 42px;
+    cursor: pointer;
+    color: #333;
+}
+
+.navbar a
+{
+    text-decoration: none;
+    color: inherit;
+    transition: font-weight 0.3s ease;
+}
+
+.navbar li:hover a, .navbar li.actief a
+{
+    font-weight: bold;
+    color: #4b8df0;
+}
+
+/* Main content */
+.main-content {
+    flex-grow: 1;
+    padding: 60px; 
+}
+
+.overzicht
+{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #333;
+    font-size: 40px;
+}
+
+/* Saldo, rekeningen en creditcard */
+
+.saldo-overzicht
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 100px;
+}
+
+.saldo-item
+{ 
+    padding: 30px;
+    border-radius: 16px;
+    flex: 1;
+    color: white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+    background-color: #77AFFF;
+    transition: transform 0.3s ease-in-out;
+    flex: 0 calc(33.333% - 27px);
+}
+
+.saldo-item:hover
+{
+    transform: scale(1.03);
+}
+
+.saldo-item span 
+{
+    font-size: 18px;
+    opacity: 0.8;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.saldo-item p 
+{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.saldo-item small 
+{
+    display: block;
+    margin-top: 6px;
+}
+
+.rekening-info {
+    margin-top: 12px;
+    font-size: 19px;
+    opacity: 0.85;
+}
+
+.rekening-info small {
+    display: block;
+}
+
+
+/* Transacties */
+
+.alleRekeningen h2 
+{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.alleRekeningen {
+    margin-top: 20px;
+}
+
+/* Rekening voegen */
+
+.btn-nieuwe-rekening {
+    margin-bottom: 20px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 20px;
+    background-color: #4b8df0;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.5s ease;
+}
+
+.btn-nieuwe-rekening:hover {
+    background-color: #3a76d0;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.nieuwe-rekening-form {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.nieuwe-rekening-form input {
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1.5px solid #DCE7F7;
+    font-size: 14px;
+    width: 200px;
+}
+
+/* Geld toevoegen aan saldo */
+.btn-geld-toevoegen 
+{
+    margin-top: 18px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 14px;
+    background: #4b8df0;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn-geld-toevoegen:hover 
+{
+    transform: translateY(-2px);
+    opacity: 0.95;
+}
+
+/* user Dropdown */
+.dropMenu{
+  position:absolute;
+  right: 43px;
+  top: 90px;
+  background:#fff;
+  list-style:none;
+  margin:0;
+  padding:8px;
+  border-radius:14px;
+  min-width:200px;
+  box-shadow:0 14px 40px rgba(0,0,0,.18);
+  border:1px solid rgba(119,175,255,.25);
+  display:none;
+  z-index:9999;
+}
+
+
+.dropMenu::before{
+  content:"";
+  position:absolute;
+  top:-8px;
+  right:14px;
+  width:14px;
+  height:14px;
+  background:#fff;
+  transform:rotate(45deg);
+  border-left:1px solid rgba(119,175,255,.25);
+  border-top:1px solid rgba(119,175,255,.25);
+}
+
+.dropMenu li{
+  padding:12px 14px;
+  border-radius:10px;
+  cursor:pointer;
+  color:#1A2C43;
+  font-weight:600;
+  font-size:14px;
+  transition: background .15s ease, transform .15s ease, color .15s ease;
+}
+.dropMenu li:hover{
+  background:rgba(119,175,255,.18);
+  color:#2b6fd6;
+  transform:translateX(2px);
+}
+
+.dropDown.active .dropMenu{
+  display:block;
+}

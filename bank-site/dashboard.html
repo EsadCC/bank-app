@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinNova - Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://kit.fontawesome.com/e3edab2e0c.js" crossorigin="anonymous"></script>
+    <script src="dashboard.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="nav-head" id="nav-head">
+            <img src="img/FinNovalogo-removebg-preview.png" width="100" class="logo" id="logo">
+            <div id="dropDown" class="dropDown">
+            <div class="userpng" id="userToggle"><i class="fas fa-user"></i></div>
+            <ul class="dropMenu">
+              <li id="settingsDrop">Instellingen</li>
+              <li id="helpDrop">Help</li>
+              <li id="logUitDrop">Uitloggen</li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="layout-navbar">
+        <nav class="navbar" id="navbar">
+            <ul>
+                <li class="dashboard actief"><a href="dashboard.html">Dashboard</a></li>
+                <li class="rekeningen"><a href="rekeningen.html">Rekeningen</a></li>
+                <li class="overschrijven"><a href="overschrijven.html">Overschrijven</a></li>
+                <li class="transacties"><a href="transacties.html">Transacties</a></li>
+                <li class="spaardoelen"><a>Spaardoelen</a></li>
+                <li class="instellingen"><a>Instellingen</a></li>
+                <li class="help"><a>Help</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <h1 class="goedemiddag" id="goedemiddag">Goedemiddag, ...</h1>
+
+            <section class="saldo-overzicht">
+                <div class="saldo-item">
+                    <span>Betaalrekening:</span>
+                    <p>€3000,00</p>
+                </div>
+                <div class="saldo-item">
+                    <span>Spaarrekening:</span>
+                    <p>€10000,00</p>
+                </div>
+                <div class="saldo-item">
+                    <span>Creditcard:</span>
+                    <p>€1000,00</p>
+                </div>
+            </section>
+
+            <section class="latest-transacties">
+                <h2>Laatste transacties</h2>
+                <div class="transactie-list">
+                    <div class="transactie-row">
+                        <span class="datum">11-23</span>
+                        <p class="kaart1" id="kaart1">IBAN: NLXX...34</p>
+                        <div class="progress-bar"></div>
+                        <span class="bedrag">-34,99</span></div>
+                    <div class="transactie-row">
+                        <span class="datum">10-18</span>
+                        <p class="kaart1" id="kaart1">IBAN: NLXX...02</p>
+                        <div class="progress-bar"></div>
+                        <span class="bedrag">-49,99</span>
+                    </div>
+                    <div class="transactie-row">
+                        <span class="datum">10-05</span>
+                        <p class="kaart1" id="kaart1">IBAN: NLXX...95</p>
+                        <div class="progress-bar"></div>
+                        <span class="bedrag">-2,99</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
