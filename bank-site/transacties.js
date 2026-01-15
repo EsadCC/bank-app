@@ -1,6 +1,10 @@
+
+
+
 // User DropDown
   const dropDown = document.getElementById("dropDown");
   const userToggle = document.getElementById("userToggle");
+  const logUit = document.getElementById("logUitDrop");
 
   if (dropDown && userToggle) {
   userToggle.addEventListener("click", (e) => {
@@ -12,6 +16,13 @@
     dropDown.classList.remove("active");
   });
 }
+
+logUit.onclick = function()
+{
+  alert("U bent uitgelogd!");
+  window.location.href = "Home.html";
+}
+
 
 /*
   TRANSACTIE ARRAY (DATA)
@@ -64,6 +75,7 @@ function updateTransactions()
     }
 
     list = nieuweLijst;
+    
   }
 
 
@@ -132,7 +144,7 @@ function updateTransactions()
     txList.innerHTML += `
       <div class="tx-row">
         <div>
-          <strong>${t.type}</strong><br>
+          <strong class="${kleur}">${t.type}</strong><br>
           <small>${t.datum}</small>
         </div>
 
@@ -143,6 +155,7 @@ function updateTransactions()
     `;
   }
 }
+
 
 
 /*
@@ -169,3 +182,6 @@ resetBtn.addEventListener("click", function()
 */
 
 updateTransactions();
+
+
+

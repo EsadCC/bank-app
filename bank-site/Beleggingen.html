@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinNova - Beleggingen</title>
+
+    <link rel="stylesheet" href="Beleggingen.css">
+    <script src="https://kit.fontawesome.com/e3edab2e0c.js" crossorigin="anonymous"></script>
+    <script src="Beleggingen.js" defer></script>
+</head>
+<body>
+
+<header>
+    <nav class="nav-head">
+        <img src="img/FinNovalogo-removebg-preview.png" width="100" class="logo">
+        <div id="dropDown" class="dropDown">
+            <div class="userpng" id="userToggle">
+                <i class="fas fa-user"></i>
+            </div>
+            <ul class="dropMenu">
+                <li id="settingsDrop">Instellingen</li>
+                <li id="helpDrop">Help</li>
+                <li id="logUitDrop">Uitloggen</li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div class="layout-navbar">
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="rekeningen.html">Rekeningen</a></li>
+            <li><a href="overschrijven.html">Overschrijven</a></li>
+            <li><a href="transacties.html">Transacties</a></li>
+            <li class="actief"><a href="Beleggingen.html">Beleggingen</a></li>
+            <li><a>Instellingen</a></li>
+            <li><a>Help</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+
+        <section class="card">
+            <h1>Beleggingen</h1>
+
+            <p class="saldo">
+                Beschikbaar saldo: €<span id="saldo">760.00</span>
+            </p>
+
+            <label>Categorie:</label>
+            <select id="categorie">
+                <option value="aandelen">Aandelen</option>
+                <option value="crypto">Crypto</option>
+            </select>
+
+            <label>Product:</label>
+            <select id="product"></select>
+
+            <p>Huidige prijs: €<span id="prijs">0.00</span></p>
+            <p>In bezit: <span id="bezit">0</span> eenheden</p>
+
+            <label>Bedrag (€):</label>
+            <input type="number" id="bedrag" placeholder="Bijv. 240">
+
+            <button id="koopBtn">Kopen</button>
+            <button id="verkoopBtn" class="ghost">Verkopen</button>
+
+            <p id="melding"></p>
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>

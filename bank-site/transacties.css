@@ -292,11 +292,11 @@ select:focus, input[type="date"]:focus{
 
 .tx-amount.in
 {
-    color:#1f7a3f;
+  color:#1f7a3f;
 }
 .tx-amount.out
 {
-    color:#b00020;
+  color:#b00020;
 }
 
 .in
@@ -311,6 +311,7 @@ select:focus, input[type="date"]:focus{
     font-weight: 800;
 }
 
+
 .empty{
   padding:18px;
   border-radius:14px;
@@ -318,5 +319,4 @@ select:focus, input[type="date"]:focus{
   color:#1A2C43;
   font-weight:800;
   border:1px dashed rgba(119,175,255,.45);
-
 }
