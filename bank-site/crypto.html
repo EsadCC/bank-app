@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>FinNova - Crypto</title>
+    <link rel="stylesheet" href="crypto.css">
+    <script src="crypto.js" defer></script>
+    <script src="https://kit.fontawesome.com/e3edab2e0c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+    <nav class="nav-head">
+        <img src="img/FinNovalogo-removebg-preview.png" width="100" class="logo">
+        <div class="userpng"><i class="fas fa-user"></i></div>
+    </nav>
+</header>
+
+<div class="layout-navbar">
+
+    <nav class="navbar">
+        <ul>
+            <li class="dashboard"><a href="dashboard.html">Dashboard</a></li>
+                <li class="rekeningen"><a href="rekeningen.html">Rekeningen</a></li>
+                <li class="overschrijven"><a href="overschrijven.html">Overschrijven</a></li>
+                <li class="transacties"><a href="transacties.html">Transacties</a></li>
+                <li class="beleggingen"><a href="Beleggingen.html">Beleggingen</a></li>
+                <li class="crypto actief"><a href="crypto.html">Crypto</a></li>
+                <li class="help"><a>Help</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <section class="card">
+    <h1>Cryptovaluta</h1>
+
+    <p class="saldo">Beschikbaar saldo: €<span id="saldo">760.00</span></p>
+
+    <div class="crypto-row">
+        Bitcoin €<span id="btcPrijs"></span> - In bezit: <span id="btcBez"></span>
+    </div>
+
+    <div class="crypto-row">
+        Ethereum €<span id="ethPrijs"></span> - In bezit: <span id="ethBez"></span>
+    </div>
+
+    <div class="crypto-row">
+        Litecoin €<span id="ltcPrijs"></span> - In bezit: <span id="ltcBez"></span>
+    </div>
+
+    <label>Kies crypto:</label>
+    <select id="crypto">
+        <option value="btc">Bitcoin</option>
+        <option value="eth">Ethereum</option>
+        <option value="ltc">Litecoin</option>
+    </select>
+
+    <label>Bedrag (€):</label>
+    <input type="number" id="bedrag" placeholder="Bijv. 100">
+
+    <button id="koop">Kopen</button>
+    <button id="verkoop" class="ghost">Verkopen</button>
+
+    <p id="melding"></p>
+</section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
