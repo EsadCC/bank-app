@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    min-height: 100vh;
+    color: #13283f;
+    background: linear-gradient(180deg, #f2f7ff 0%, #fbfdff 100%);
+}
+
+.nav-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    margin: 1rem;
+    background: #fff;
+    border-radius: 16px;
+    border: 1px solid #dbe7fb;
+}
+
+.logo { width: 95px; }
+
+.userpng {
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #5b9dff, #3d7cf5);
+    color: #fff;
+    font-size: 1.05rem;
+    cursor: pointer;
+}
+
+.layout-navbar {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 1rem;
+    padding: 0 1rem 1rem;
+}
+
+.navbar {
+    background: #fff;
+    border: 1px solid #dbe7fb;
+    border-radius: 16px;
+    padding: 0.75rem;
+}
+
+.navbar ul { list-style: none; }
+.navbar li { margin-bottom: 0.35rem; }
+.navbar a {
+    display: block;
+    padding: 0.8rem 0.9rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #35506d;
+    font-weight: 600;
+}
+.navbar li.actief a, .navbar a:hover {
+    background: #edf4ff;
+    color: #2563eb;
+}
+
+.main-content {
+    background: #fff;
+    border: 1px solid #dbe7fb;
+    border-radius: 16px;
+    padding: 1.25rem;
+}
+
+.goedemiddag { font-size: clamp(1.4rem, 3vw, 2rem); margin-bottom: 1rem; }
+
+.saldo-overzicht {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.8rem;
+    margin-bottom: 1.25rem;
+}
+
+.saldo-item {
+    padding: 1rem;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #5b9dff, #3d7cf5);
+    color: #fff;
+}
+
+.saldo-item p { font-size: 1.6rem; font-weight: 700; margin-top: 0.3rem; }
+
+.latest-transacties h2 { margin-bottom: 0.7rem; }
+
+.transactie-list {
+    border: 1px solid #e5edfb;
+    border-radius: 14px;
+    padding: 0.6rem 0.9rem;
+}
+
+.transactie-row {
+    display: grid;
+    grid-template-columns: 64px 1fr 120px 74px;
+    gap: 0.6rem;
+    align-items: center;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #edf2fc;
+}
+.transactie-row:last-child { border-bottom: none; }
+
+.kaart1 { color: #4f6278; font-size: 0.92rem; }
+.progress-bar { height: 8px; border-radius: 999px; background: #dce7fb; }
+.bedrag { color: #b91c1c; font-weight: 700; }
+
+.dropMenu {
+    position: absolute;
+    right: 1rem;
+    top: 4.6rem;
+    background: #fff;
+    list-style: none;
+    padding: 0.4rem;
+    border-radius: 12px;
+    border: 1px solid #dbe7fb;
+    display: none;
+}
+.dropDown.active .dropMenu { display: block; }
+.dropMenu li { padding: 0.6rem 0.75rem; border-radius: 8px; cursor: pointer; }
+.dropMenu li:hover { background: #edf4ff; color: #2563eb; }
+
+@media (max-width: 950px) {
+    .layout-navbar { grid-template-columns: 1fr; }
+    .saldo-overzicht { grid-template-columns: 1fr; }
+    .transactie-row { grid-template-columns: 56px 1fr; }
+    .progress-bar, .bedrag { grid-column: span 2; }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinNova - Transacties</title>
+    <link rel="stylesheet" href="transacties.css">
+    <script src="https://kit.fontawesome.com/e3edab2e0c.js" crossorigin="anonymous"></script>
+    <script src="transacties.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="nav-head" id="nav-head">
+            <img src="FinNovalogo-removebg-preview.png" width="100" class="logo" id="logo">
+            <section id="dropDown" class="dropDown">
+            <button class="userpng" id="userToggle" type="button" aria-label="Gebruikersmenu"><i class="fas fa-user"></i></button>
+            <ul class="dropMenu">
+              <li id="logUitDrop">Uitloggen</li>
+            </ul>
+            </section>
+        </nav>
+    </header>
+
+    <section class="layout-navbar">
+        <nav class="navbar" id="navbar">
+            <ul>
+                <li class="dashboard actie"><a href="dashboard.html">Dashboard</a></li>
+                <li class="rekeningen"><a href="rekeningen.html">Rekeningen</a></li>
+                <li class="overschrijven"><a href="overschrijven.html">Overschrijven</a></li>
+                <li class="transacties actief"><a href="transacties.html">Transacties</a></li>
+                <li class="beleggingen"><a href="Beleggingen.html">Beleggingen</a></li>
+                <li class="crypto"><a href="crypto.html">Crypto</a></li>
+            </ul>
+        </nav>
+
+    <main class="main-content">
+      <section class="tx-card">
+        <h1 class="tx-title">Transactiegeschiedenis</h1>
+
+        <section class="filters">
+          <section class="field">
+            <label for="typeFilter">Filter op type:</label>
+            <select id="typeFilter">
+              <option value="alle">Alle</option>
+              <option value="inkomend">Inkomend</option>
+              <option value="uitgaand">Uitgaand</option>
+            </select>
+          </section>
+
+          <section class="field">
+            <label for="dateFilter">Filter op datum:</label>
+            <input id="dateFilter" type="date" />
+          </section>
+
+          <section class="field">
+            <label for="sortFilter">Sorteren op datum:</label>
+            <select id="sortFilter">
+              <option value="nieuw-oud">Nieuw -> Oud</option>
+              <option value="oud-nieuw">Oud -> Nieuw</option>
+            </select>
+          </section>
+
+          <button class="btn-primary" id="applyBtn">Filteren</button>
+          <button class="btn-ghost" id="resetBtn" type="button">Reset</button>
+        </section>
+
+        <section class="tx-list" id="txList"></section>
+      </section>
+    </main>
+    </section>
+</body>
+</html>
+

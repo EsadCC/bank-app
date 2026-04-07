@@ -1,0 +1,67 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #f2f7ff 0%, #fbfdff 100%);
+    color: #13283f;
+}
+
+.nav-head {
+    display: flex; justify-content: space-between; align-items: center;
+    margin: 1rem; padding: 1rem 1.5rem;
+    background: #fff; border: 1px solid #dbe7fb; border-radius: 16px;
+}
+.logo { width: 95px; }
+.userpng {
+    width: 44px; height: 44px; border: none; border-radius: 999px;
+    background: linear-gradient(135deg, #5b9dff, #3d7cf5); color: #fff; cursor: pointer;
+}
+
+.layout-navbar { display: grid; grid-template-columns: 240px 1fr; gap: 1rem; padding: 0 1rem 1rem; }
+.navbar { background: #fff; border: 1px solid #dbe7fb; border-radius: 16px; padding: 0.75rem; }
+.navbar ul { list-style: none; }
+.navbar li { margin-bottom: 0.35rem; }
+.navbar a {
+    display: block; padding: 0.8rem 0.9rem; border-radius: 10px;
+    text-decoration: none; color: #35506d; font-weight: 600;
+}
+.navbar li.actief a, .navbar a:hover { background: #edf4ff; color: #2563eb; }
+
+.main-content { background: #fff; border: 1px solid #dbe7fb; border-radius: 16px; padding: 1.25rem; }
+.overzicht { font-size: clamp(1.4rem, 3vw, 2rem); margin-bottom: 1rem; }
+
+.nieuwe-rekening-form {
+    display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.7rem; margin-bottom: 0.8rem;
+}
+.nieuwe-rekening-form input {
+    width: 100%; padding: 0.72rem 0.75rem; border: 1.5px solid #d4deec; border-radius: 10px;
+}
+.btn-nieuwe-rekening, .btn-geld-toevoegen {
+    border: none; border-radius: 10px; color: #fff; font-weight: 700; cursor: pointer;
+    background: linear-gradient(135deg, #5b9dff, #3d7cf5);
+}
+.btn-nieuwe-rekening { padding: 0.75rem 1rem; margin-bottom: 1rem; }
+.btn-geld-toevoegen { width: 100%; padding: 0.65rem; margin-top: 0.7rem; }
+
+.saldo-overzicht { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.8rem; }
+.saldo-item {
+    padding: 1rem; border-radius: 14px;
+    background: linear-gradient(135deg, #5b9dff, #3d7cf5); color: #fff;
+}
+.saldo-item p { font-size: 1.5rem; font-weight: 700; margin: 0.35rem 0; }
+.rekening-info small { display: block; opacity: 0.95; }
+
+.dropMenu {
+    position: absolute; right: 1rem; top: 4.6rem; list-style: none;
+    background: #fff; border: 1px solid #dbe7fb; border-radius: 12px; padding: 0.4rem; display: none;
+}
+.dropDown.active .dropMenu { display: block; }
+.dropMenu li { padding: 0.6rem 0.75rem; border-radius: 8px; cursor: pointer; }
+.dropMenu li:hover { background: #edf4ff; color: #2563eb; }
+
+@media (max-width: 950px) {
+    .layout-navbar { grid-template-columns: 1fr; }
+    .nieuwe-rekening-form { grid-template-columns: 1fr; }
+    .saldo-overzicht { grid-template-columns: 1fr; }
+}

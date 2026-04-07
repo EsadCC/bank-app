@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinNova - Beleggingen</title>
+
+    <link rel="stylesheet" href="Beleggingen.css">
+    <script src="https://kit.fontawesome.com/e3edab2e0c.js" crossorigin="anonymous"></script>
+    <script src="Beleggingen.js" defer></script>
+</head>
+<body>
+
+<header>
+    <nav class="nav-head">
+        <img src="FinNovalogo-removebg-preview.png" width="100" class="logo">
+        <section id="dropDown" class="dropDown">
+            <button class="userpng" id="userToggle" type="button" aria-label="Gebruikersmenu">
+                <i class="fas fa-user"></i>
+            </button>
+            <ul class="dropMenu">
+                <li id="logUitDrop">Uitloggen</li>
+            </ul>
+        </section>
+    </nav>
+</header>
+
+<section class="layout-navbar">
+
+    <nav class="navbar">
+        <ul>
+            <li class="dashboard"><a href="dashboard.html">Dashboard</a></li>
+            <li class="rekeningen"><a href="rekeningen.html">Rekeningen</a></li>
+            <li class="overschrijven"><a href="overschrijven.html">Overschrijven</a></li>
+            <li class="transacties"><a href="transacties.html">Transacties</a></li>
+            <li class="beleggingen actief"><a href="Beleggingen.html">Beleggingen</a></li>
+            <li class="crypto"><a href="crypto.html">Crypto</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+
+        <section class="card">
+            <h1>Beleggingen</h1>
+
+            <p class="saldo">
+                Beschikbaar saldo: €<span id="saldo">760.00</span>
+            </p>
+
+            <label>Categorie:</label>
+            <select id="categorie">
+                <option value="aandelen">Aandelen</option>
+                <option value="crypto">Crypto</option>
+            </select>
+
+            <label>Product:</label>
+            <select id="product"></select>
+
+            <p>Huidige prijs: €<span id="prijs">0.00</span></p>
+            <p>In bezit: <span id="bezit">0</span> eenheden</p>
+
+            <label>Bedrag (€):</label>
+            <input type="number" id="bedrag" placeholder="Bijv. 240">
+
+            <button id="koopBtn">Kopen</button>
+            <button id="verkoopBtn" class="ghost">Verkopen</button>
+
+            <p id="melding"></p>
+        </section>
+
+    </main>
+
+</section>
+
+</body>
+</html>
