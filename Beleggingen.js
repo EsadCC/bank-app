@@ -177,5 +177,5 @@ laadProducten();
 logUit.onclick = function()
 {
   alert("U bent uitgelogd!");
-  window.location.href = "Home.html";
+  window.location.href = "index.html";
 }
